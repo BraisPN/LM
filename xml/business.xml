@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE business [ 
+    <!ELEMENT business (videogame)>
+    <!ELEMENT videogame (title,developer)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT developer (#PCDATA)>
+]>
+
+<business>
+    <videogame>
+        <title>Dragon Quest IX</title>
+        <developer>Level 5</developer>
+    </videogame>
+</business>

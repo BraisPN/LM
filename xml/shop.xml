@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE shop [ 
+    <!ELEMENT shop (sales,customers)>
+    <!ELEMENT sales (sale,sale,sale,sale,sale)>
+    <!ELEMENT customers (customer_id)>
+    <!ELEMENT sale (purchase_number,date_of_purchase,customer_id,item_code)>
+    <!ELEMENT purchase_number (#PCDATA)>
+    <!ELEMENT date_of_purchase (#PCDATA)>
+    <!ELEMENT customer_id (#PCDATA)>
+    <!ELEMENT item_code (#PCDATA)>
+]>
+
+<shop>
+    <sales>
+        <sale>
+            <purchase_number>1</purchase_number>
+            <date_of_purchase>9/3/2016</date_of_purchase>
+            <customer_id>1</customer_id>
+            <item_code>A_1</item_code>
+        </sale>
+        <sale>
+            <purchase_number>2</purchase_number>
+            <date_of_purchase>12/2/2016</date_of_purchase>
+            <customer_id>2</customer_id>
+            <item_code>C_1</item_code>
+        </sale>
+        <sale>
+            <purchase_number>3</purchase_number>
+            <date_of_purchase>4/15/2017</date_of_purchase>
+            <customer_id>3</customer_id>
+            <item_code>D_1</item_code>
+        </sale>
+        <sale>
+            <purchase_number>4</purchase_number>
+            <date_of_purchase>5/24/2017</date_of_purchase>
+            <customer_id>1</customer_id>
+            <item_code>B_2</item_code>
+        </sale>
+        <sale>
+            <purchase_number>5</purchase_number>
+            <date_of_purchase>5/25/2017</date_of_purchase>
+            <customer_id>4</customer_id>
+            <item_code>B_2</item_code>
+        </sale>
+    </sales>
+    <customers>
+        <customer_id>1</customer_id>
+    </customers>
+</shop>
