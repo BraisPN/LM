@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="student">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" />
+                <xs:element name="born-year" type="validYearType"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="validYearType">
+        <xs:restriction base="xs:int">
+        <xs:minInclusive value="1900"></xs:minInclusive>
+        <xs:maxInclusive value="2008"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

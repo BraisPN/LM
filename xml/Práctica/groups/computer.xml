@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="computer.xsd">
+    <hardware>Power Supply</hardware>
+    <hardware>Motherboard</hardware>
+    <software>W11</software>
+    <software>Paint</software>
+    <users>pepe pepo pepa</users>
+    <ages>21 30 69</ages>
+</computer>

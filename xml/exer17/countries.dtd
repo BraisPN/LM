@@ -1,0 +1,12 @@
+<!DOCTYPE countries [
+  <!ELEMENT countries (country*)>
+  <!ELEMENT country (area, currency+, government, borders)>
+  <!ATTLIST country name ID #REQUIRED>
+  <!ELEMENT area (#PCDATA)>
+  <!ATTLIST area unit NMTOKEN #REQUIRED>
+  <!ELEMENT currency (#PCDATA)>
+  <!ELEMENT government EMPTY>
+  <!ATTLIST government system NMTOKEN #IMPLIED>
+  <!ELEMENT borders EMPTY>
+  <!ATTLIST borders country IDREFS #IMPLIED>
+]>

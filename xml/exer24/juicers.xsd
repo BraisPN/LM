@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="juicers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="juicer" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="nameType" />
+                            <xs:element name="image" type="imageType"/>
+                            <xs:element name="description" type="descriptionType" />
+                            <xs:element name="warranty" minOccurs="0" maxOccurs="1" type="xs:date" />
+                            <xs:element name="weight" minOccurs="0" maxOccurs="1" type="xs:integer"/>
+                            <xs:element name="cost" minOccurs="1" maxOccurs="unbounded" type="money" />
+                            <xs:element name="retailer" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="nameType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][a-z]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="money">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="descriptionType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="30"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="imageType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="((/)([A-Z]|[a-z]|(-|_|.))+)+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

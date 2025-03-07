@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shiporder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="shiporder.xsd" orderid="1">
+    <orderperson></orderperson>
+    <shipto>
+        <name>Colacao</name>
+        <address>Rúa Paco 14</address>
+        <city>A Coruña</city>
+        <country>España</country>
+    </shipto>
+    <item>
+        <title>Colacao</title>
+        <note>Cacao en polvo</note>
+        <quantity>1</quantity>
+        <price>10</price>
+    </item>
+</shiporder>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="document.xsd">
+    <author>
+        <name>Pepe</name>
+        <gender>male</gender>
+    </author>
+    <text>Hello World</text>
+    important!
+</document>

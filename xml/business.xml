@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <!DOCTYPE business [ 
-    <!ELEMENT business (videogame)>
-    <!ELEMENT videogame (title,developer)>
+    <!ELEMENT business (videogame,videogame)>
+    <!ELEMENT videogame (title,developer,release_date)>
+    <!ELEMENT release_date (#PCDATA)>
     <!ELEMENT title (#PCDATA)>
     <!ELEMENT developer (#PCDATA)>
 ]>
@@ -11,5 +12,11 @@
     <videogame>
         <title>Dragon Quest IX</title>
         <developer>Level 5</developer>
+        <release_date>2009</release_date>
+    </videogame>
+        <videogame>
+        <title>Fortnite</title>
+        <developer>Level 5</developer>
+        <release_date>2015</release_date>
     </videogame>
 </business>

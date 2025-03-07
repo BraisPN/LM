@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchaseOrder orderDate="2025-02-21" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <shipTo country="España">
+        <name>Jose</name>
+        <street>12 Rúa Manolo</street>
+        <city>Bembibre</city>
+        <state>Val do Dubra</state>
+        <zip>15155</zip>
+    </shipTo>
+    <billTo country="España">
+        <name>Maricarmen</name>
+        <street>14 Rúa Carmela</street>
+        <city>Portomouro</city>
+        <state>Val do Dubra</state>
+        <zip>15154</zip>
+    </billTo>
+    <comment>Hola</comment>
+    <items>
+        <item partNum="123-AB">
+            <productName>Aguacate</productName>
+            <quantity>2</quantity>
+            <USPrice>8030.99</USPrice>
+            <comment>Hola</comment>
+            <shipDate>2025-02-25</shipDate>
+        </item>
+        <item partNum="124-AC">
+            <productName>Uva</productName>
+            <quantity>1</quantity>
+            <USPrice>120.99</USPrice>
+        </item>
+    </items>
+</purchaseOrder>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<juicers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="juicers.xsd">
+    <juicer>
+        <name>Zumex</name>
+        <image>/users/Jose</image>
+        <description>Best juicer</description>
+        <warranty>2026-11-11</warranty>
+        <cost>25.00</cost>
+        <retailer></retailer>
+    </juicer>
+    <juicer>
+        <name>Jose</name>
+        <image>/asdsas</image>
+        <description></description>
+        <weight>25</weight>
+        <cost>25.00</cost>
+        <retailer></retailer>
+    </juicer>
+    <juicer>
+        <name>Zumez</name>
+        <image>/users/Pepe</image>
+        <description>Clasic juicer</description>
+        <warranty>2026-11-11</warranty>
+        <weight>22</weight>
+        <cost>25.00</cost>
+        <cost>25.00</cost>
+        <retailer></retailer>
+    </juicer>
+</juicers>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE computer_shop [
+    <!ELEMENT computer_shop (products, customers, sales)>
+    <!ELEMENT products (product+)>
+
+    <!ELEMENT product (title,(manufacturer|brand),price,stock,reconditioned)>
+    <!ATTLIST product id ID #REQUIRED>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT manufacturer (#PCDATA)>
+    <!ELEMENT brand (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ATTLIST product currency (EUR|USD) #REQUIRED>
+    <!ATTLIST product discount CDATA "0">
+    <!ELEMENT stock (#PCDATA)>
+    <!ELEMENT reconditioned EMPTY>
+    <!ATTLIST product vat (general|reduced|super-reduced) #REQUIRED>
+    <!ATTLIST product ean NMTOKEN #IMPLIED>
+
+    <!ELEMENT customers (customer?)>
+    <!ELEMENT customer (id_card,firstname,surnames,telephone*,address?)>
+    <!ATTLIST customer id ID #REQUIRED>
+    <!ELEMENT id_card (#PCDATA)>
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT surnames (#PCDATA)>
+    <!ELEMENT telephone (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ATTLIST customer date_creation CDATA #REQUIRED>
+
+    <!ELEMENT sales (sale?)>
+    <!ELEMENT sale (products_sold+,total_price,currency)>
+    <!ATTLIST sale date CDATA #REQUIRED>
+    <!ATTLIST sale customer IDREF #REQUIRED>
+    <!ELEMENT products_sold (#PCDATA)>
+    <!ATTLIST sale product_id IDREF #REQUIRED>
+    <!ATTLIST sale quantity NMTOKEN "1">
+    <!ELEMENT total_price (#PCDATA)>
+    <!ELEMENT currency (#PCDATA)>
+]>
+<computer_shop>
+    <products>
+    <product id="" currency="" vat=""></product>
+    </products>
+    <customers>
+    </customers>
+    <sales>
+    </sales>
+</computer_shop>

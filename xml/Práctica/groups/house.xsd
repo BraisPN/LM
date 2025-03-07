@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="house">
+        <xs:complexType>
+            <xs:group ref="houseGroup"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:group name="houseGroup">
+        <xs:sequence>
+            <xs:element name="room" maxOccurs="unbounded" type="elementType" />
+            <xs:element name="animal" minOccurs="0" type="elementType">
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="namenumberAttGroup">
+        <xs:attribute name="name" use="required" />
+        <xs:attribute name="number" type="xs:integer" use="required" />
+    </xs:attributeGroup>
+    <xs:complexType name="elementType">
+        <xs:attributeGroup ref="namenumberAttGroup"></xs:attributeGroup>
+    </xs:complexType>
+</xs:schema>

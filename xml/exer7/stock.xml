@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE stock SYSTEM "stock.dtd">
+<stock>
+    <new-car>
+        <model></model>
+        <price></price>
+    </new-car>
+</stock>
