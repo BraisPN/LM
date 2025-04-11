@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="school">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" />
+                <xs:element name="locations" />
+                <xs:element name="staffs">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="staff" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string" />
+                                        <xs:element name="title" />
+                                        <xs:element name="category" type="xs:string" />
+                                        <xs:element name="address" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="staff_id" type="xs:integer" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="subjects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subject" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="code" type="xs:integer"
+                                                use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="school_id" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

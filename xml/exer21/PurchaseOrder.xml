@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="PurchaseOrder.xsd" orderDate="2025-03-11">
+    <shipTo country="US">
+        <name>John Doe</name>
+        <street>123 Main Street</street>
+        <city>Springfield</city>
+        <state>IL</state>
+        <zip>62704</zip>
+    </shipTo>
+    <billTo country="US">
+        <name>Jane Doe</name>
+        <street>456 Elm Street</street>
+        <city>Springfield</city>
+        <state>IL</state>
+        <zip>62705</zip>
+    </billTo>
+    <comment>Urgent delivery requested</comment>
+    <items>
+        <item partNum="123-AB">
+            <productName>Wireless Mouse</productName>
+            <quantity>2</quantity>
+            <USPrice>29.99</USPrice>
+            <comment>Black color preferred</comment>
+            <shipDate>2025-03-15</shipDate>
+        </item>
+        <item partNum="456-CD">
+            <productName>Mechanical Keyboard</productName>
+            <quantity>1</quantity>
+            <USPrice>89.99</USPrice>
+        </item>
+    </items>
+</purchaseOrder>

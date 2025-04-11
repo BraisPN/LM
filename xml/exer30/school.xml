@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="school.xsd" school_id="123"><!--id
+    unico -->
+    <name></name>
+    <locations></locations>
+    <staffs>
+        <staff staff_id="234">
+            <name>hola</name><!--obligatorio-->
+            <title></title><!-- puede estar vacio-->
+            <category>academic</category><!--validas = academic, general, technical-->
+            <address>faxon bembibre 15873</address><!-- patrón = street, suburb and postcod-->
+        </staff>
+        <staff staff_id="233">
+            <name>hola</name><!--obligatorio-->
+            <title></title><!-- puede estar vacio-->
+            <category>general</category><!--validas = academic, general, technical-->
+            <address>faxon bembibre 15873</address><!-- patrón = street, suburb and postcod-->
+        </staff>
+    </staffs>
+    <subjects>
+        <subject code = "22">BD</subject>
+        <subject code = "23">CD</subject>
+    </subjects>
+
+</school>
