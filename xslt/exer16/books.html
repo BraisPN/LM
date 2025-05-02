@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Books Table</title>
+      <style>
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+          }
+          th, td {
+            border: 1px solid black;
+            padding: 8px;
+          }
+          th {
+            background-color: dodgerblue;
+            color: white;
+          }
+          caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          .low-price {
+            background-color: aquamarine;
+          }
+          .medium-price {
+            background-color: gold;
+          }
+          .high-price {
+            background-color: crimson;
+            color: white;
+          }
+        </style>
+   </head>
+   <body>
+      <table>
+         <caption>Number of rows: 3</caption>
+         <tr>
+            <th>Author</th>
+            <th>Title</th>
+         </tr>
+         <tr class="low-price">
+            <td>Eduardo Blanco-Amor</td>
+            <td>A esmorga</td>
+         </tr>
+         <tr class="medium-price">
+            <td>Alfonso Daniel R. Castelao</td>
+            <td>Cousas</td>
+         </tr>
+         <tr class="high-price">
+            <td>Suso de Toro</td>
+            <td>Trece badaladas</td>
+         </tr>
+      </table>
+   </body>
+</html>
