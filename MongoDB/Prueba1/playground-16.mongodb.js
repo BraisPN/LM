@@ -1,0 +1,77 @@
+const database = "braispn";
+
+use(database);
+
+db.getCollection("dances").drop();
+
+db.createCollection("dances");
+
+db.dances.insertMany([
+  {
+     "name":"Tango",
+     "price":27,
+     "places":20,
+     "start_date":"1/01/2022",
+     "end_date":"1/12/2022",
+     "teacher":"Roberto Garcia",
+     "hall":1
+  },
+  {
+     "name":"Cha-cha-cha",
+     "price":80,
+     "places":18,
+     "start_date":"1/07/2022",
+     "end_date":"1/10/2022",
+     "teacher":"Miriam Gutiérrez",
+     "hall":1
+  },
+  {
+     "name":"Rock",
+     "price":30,
+     "places":15,
+     "start_date":"1/01/2022",
+     "end_date":"1/12/2022",
+     "teacher":"Laura Mendiola",
+     "hall":1
+  },
+  {
+     "name":"Merengue",
+     "price":75,
+     "places":12,
+     "start_date":"1/01/2022",
+     "end_date":"1/12/2022",
+     "teacher":"Jesús Lozano",
+     "hall":2
+  },
+  {
+     "name":"Salsa",
+     "price":32,
+     "places":10,
+     "start_date":"1/01/2022",
+     "end_date":"1/12/2022",
+     "teacher":"Jesús Lozano",
+     "hall":2
+  },
+  {
+     "name":"Pasodoble",
+     "price":3200,
+     "places":8,
+     "start_date":"1/01/2022",
+     "end_date":"1/12/2022",
+     "teacher":"Miriam Gutierrez",
+     "hall":2
+  }
+]);
+
+ db.getCollection("dances").find({},{_id : 0,name : 1});
+
+ db.getCollection("dances").find({},{_id : 0,name : 1} : { :});
+// db.getCollection("dances").find({title : /Web/})
+
+// db.getCollection("dances").find({  $or: [{ title : /Web/ }, { title : /TV/ }]})
+
+// db.getCollection("dances").find({  $or: [{ title : /Web/i }, { title : /TV/i }]})
+
+// db.getCollection("dances").find();
+
+// db.getCollection("dances").find({price: { $in : [39.95, 65.95, 80.95 ] }})

@@ -49,14 +49,14 @@ db.movies.insertMany([
   { title: "Interstellar" },
 ]);
 
-// db.getCollection("movies").find({});
+db.getCollection("movies").find({});
 
 db.getCollection("movies").find({ writer: "J.R.R. Tolkien" })
 
-// db.getCollection("movies").find({ actors: "Brad Pitt" })
+db.getCollection("movies").find({ actors: "Brad Pitt" })
 
-// db.getCollection("movies").find({ franchise: "The Lord of the Rings" })
+db.getCollection("movies").find({ franchise: "The Lord of the Rings" })
 
-// db.getCollection("movies").find({ year: { $gte: 1990, $lte: 1999 } })
+db.getCollection("movies").find({ year: { $gte: 1990, $lte: 1999 } })
 
-// db.getCollection("movies").find({ $or: [ { year: { $lt: 2000 } }, { year: { $gt: 2010 } } ] })
+db.getCollection("movies").find({  $or: [{ year: { $lte: 2000 } }, { year: { $gte: 2010 } }]});
