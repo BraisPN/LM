@@ -4,8 +4,6 @@ use(database);
 
 db.getCollection("dances").drop();
 
-db.createCollection("dances");
-
 db.dances.insertMany([
   {
      "name":"Tango",
@@ -63,15 +61,20 @@ db.dances.insertMany([
   }
 ]);
 
- db.getCollection("dances").find({},{_id : 0,name : 1});
+// db.dances.find({}, {_id : 0, name :1});
+// con disctint
+// db.dances.distinct("name");
 
- db.getCollection("dances").find({},{_id : 0,name : 1} : { :});
-// db.getCollection("dances").find({title : /Web/})
+// db.dances.find({ price: { $gt: 40 } }, { _id: 0, name: 1 });
+// con disctint
+// db.dances.distinct("name", { price: { $gt: 40 } });
 
-// db.getCollection("dances").find({  $or: [{ title : /Web/ }, { title : /TV/ }]})
+// db.dances.find().sort({ name: 1 });
+// con disctint
+// db.dances.distinct("name").sort();
 
-// db.getCollection("dances").find({  $or: [{ title : /Web/i }, { title : /TV/i }]})
+// db.dances.find({ name: "Pasodoble" });
 
-// db.getCollection("dances").find();
+// db.dances.find({ teacher: /Lozano$/ }, { _id: 0, name: 1 });
 
-// db.getCollection("dances").find({price: { $in : [39.95, 65.95, 80.95 ] }})
+// db.dances.find().limit(3);
